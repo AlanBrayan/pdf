@@ -237,7 +237,7 @@ $html = '
 
       <div style="width: 100%;"  style=" height: 50%;">
       <div id="tabla1">
-      <h3 id="tabla1">Partida Presupuestal: 126 010804010101 11010101 20706006000000L 1222 5100</h3>
+      <h4 id="tabla1">Partida Presupuestal: 126 010804010101 11010101 20706006000000L 1222 5100</h4>
       
          <table  style="width: 800px">
 
