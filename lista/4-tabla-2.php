@@ -12,24 +12,29 @@ $html = '
          table {
          font-family: serif; 
          font-size: 5pt; 
-         border-collapse: collapse;
-         width: 120px;
+        
+         width: 100px;
          margin-left:auto;margin-right:auto;
-         margin-top:40px;
-         border-collapse: collapse;
+         margin-top:30px;
+         
          }
          em {
          font-weight: bold;
          }
-         td, th {
-         border: 0.5px solid  rgb(44, 44, 44);
+         tabla3.th {
          text-align: left;
          padding: 1px;
          }
+
+         td, th {
+          border: 0.5px solid  rgb(44, 44, 44);
+          text-align: left;
+          padding: 1px;
+          }
          grande, 1, 2 {
          border: 1px solid black;
          border-collapse: collapse;
-         padding: 10px;
+         padding: 1px;
          }
          tr:nth-child(even) {
          background-color: #ffffff;
@@ -90,6 +95,91 @@ $html = '
           padding: 70px;
           display: inline-block;
         }
+
+        #light-table {
+          border: 1px solid black;
+          width: 100%;  
+          padding-top: 0px;
+          padding-bottom: 1px;
+          text-align: left;
+          margin-top: 1px;
+          margin-bottom: 0px;
+       }
+       .leftdiv1 {
+        float: left;
+        position: relative;
+        width:20%; 
+        padding-top: 0px;
+        padding-bottom: 12px;
+      
+      }     
+       .leftdiv2 {
+         float: left;
+         position: relative;
+         width:37%; 
+        
+       }
+
+       pie-pagina{
+         height: 150px;
+         left: 50px;
+         position: relative;
+         top: -50px;
+         width: 150px;
+
+       }
+
+       .leftdiv3 {
+        float: left;
+        position: relative;
+        width:37%; 
+      
+      }
+
+
+       
+       .leftdiv p {
+         display: block;
+         width: 75%;
+         margin: 0 auto !important;
+         color:black;
+       }
+       
+       #leftdivcontainer {
+         vertical-align: middle;
+         width: 100%;
+         text-align: center;
+       }
+       
+       #light-table-paragraph {
+        font-family: Droid;
+         font-size: 12px;
+         color: #2e2e2e;
+         text-align: left;
+         line-height: 40px;
+       }
+       
+       h3 {
+         padding: 0 4px;
+       }
+       
+       .clearfix:after {
+         clear: both;
+       }
+       
+       .clearfix:before,
+       .clearfix:after {
+         content: " ";
+         display: table;
+       }
+
+
+       input[type=checkbox] {
+         transform: scale(14.5);
+       }
+
+
+
       </style>
    </head>
    <body>
@@ -106,7 +196,7 @@ $html = '
       <br> 
       <table style="width:100%"   >
          <tr>
-            <th colspan="3" style="text-align: center; background-color: rgb(168, 168, 168);" >RECIBO PARA TRÁMITE DE PAGOS</th>
+            <th colspan="3" style="text-align: center;   background-color: rgb(156, 156, 156) ;" >RECIBO PARA TRÁMITE DE PAGOS</th>
          </tr>
          <tr style="text-align: center;">
             <td width="80px" style="font-size: 57 ;" style="text-align: center;">APELLIDO PATERNO</td>
@@ -141,34 +231,49 @@ $html = '
       
 
       
-      <div class="segunda">
+
+      <div id="light-table">
+      <div id="leftdivcontainer" class="clearfix">
+        <div class="leftdiv1"><p id="light-table-paragraph">
+        <br>
+        &nbsp; &nbsp;   &nbsp; &nbsp;FINIQUITO</p></div>
+        
+        <div class="leftdiv2" id="light-table-paragraph"><input type="checkbox" id="coding" name="interest" value="coding" />Baja por renuncia
+        <br>
+        <input type="checkbox" id="coding" name="interest" value="coding" />Baja por jubilación
+        <br>
+        <input type="checkbox" id="coding" name="interest" value="coding" />Indemnización por riesgo de trabajo
+        <br>
+        <input type="checkbox" id="coding" name="interest" value="coding" />Laudo por juicio laboral
+        </div>
+
+
+        <div class="leftdiv3" id="light-table-paragraph"><input type="checkbox" id="coding" name="interest" value="coding" />Baja por inhabilitación
+        <br>
+        <input type="checkbox" id="coding" name="interest" value="coding" />Baja por fallecimiento
+        <br>
+        <input type="checkbox" id="coding" name="interest" value="coding" />Vencimiento de contrato
+        <br>          
+        <input type="checkbox" id="coding" name="interest" value="coding" />Otro Especificar {{valor}}
+        </div>
+
+
+
       
-         <table   style=" border-collapse:collapse;">
-         <tr style="border: none;">
-            <td rowspan="4"  style="border: inset 0pt" style="border: 0px solid rgb(255, 252, 252);" style="border: hidden" style="text-align: center; width: 150px; ">FINIQUITO</td>
-               <td  style="border: inset 0pt" style="border: none;"  style="border: 0px solid rgb(255, 252, 252);" style="border: hidden" style="text-align: center; width: 370px; "><input type="checkbox" id="cbox1" value="first_checkbox"> Baja por renuncia</td>
-               <td style="border: inset 0pt" style="border: none;"style="border: 0px solid rgb(255, 252, 252);"  style="text-align: center; width: 344px; "><input type="checkbox" id="cbox1" value="first_checkbox">Baja por inhabilitación</td>
-               
-            </tr>
-            <tr   style="border: 0px none black">
-               <td   style="border: 0px solid rgb(255, 252, 252);" style="border: hidden" style="text-align: center; width: 344px; "><input type="checkbox" id="cbox1" value="first_checkbox">Baja por jubilación</td>
-               <td  style="border: 0px solid rgb(255, 252, 252);"  style="text-align: center; width: 344px; "><input type="checkbox" id="cbox1" value="first_checkbox">Baja por fallecimiento</td>
-            </tr>
-            <tr   style="border: 0px none black">
-               <td   style="border: 0px solid rgb(255, 252, 252);" style="border: hidden" style="text-align: center; width: 344px; "> <input type="checkbox" id="cbox1" value="first_checkbox">Indemnización por riesgo de trabajo</td>
-               <td  style="border: 0px solid rgb(255, 252, 252);"  style="text-align: center; width: 344px; "><input type="checkbox" id="cbox1" value="first_checkbox">Vencimiento de contrato</td>
-            </tr>
-            <tr   style="border: 0px none black">
-               <td   style="border: 0px solid rgb(255, 252, 252);" style="border: hidden" style="text-align: center; width: 344px; "><input type="checkbox" id="cbox1" value="first_checkbox">Laudo por juicio laboral</td>
-               <td  style="border: 0px solid rgb(255, 252, 252);"  style="text-align: center; width: 344px; "><input type="checkbox" id="cbox1" value="first_checkbox">Otro Especificar {{valor}}</td>
-            </tr>
-            <tr>
-               <th  style="width: 10%;" colspan="3" style="text-align: left" >Partida Presupuestal: {{valor}}</th>
-            </tr>
-         </table>
-      </div>
+    </div>
+
+
+
+
+
+
+
       <div style="width: 100%;"  style=" height: 50%;">
       <table  style="width: 800px">
+      <tr>
+      <th   style="border-style: hidden;"  style="width: 100px;" colspan="6" style="text-align: left" >Partida Presupuestal: 126 010804010101 11010101 20706006000000L 1222 5100</th>
+      </tr>
+      
       <tr>
          <td style="text-align: center; " style="width: 30%;"  >CLAVE</td>
          <td style="text-align: center;">PERCEPCIONES
@@ -271,22 +376,25 @@ $html = '
       <div class="fecha" align="center">
          Lopez Lopez Julian
       </div>
-      <br><br>
+      <br>
       <div>
-         <div style="float:left;width: 69%;outline: green solid thin"> _____________________________________</div>
-         <div style="float:left;width: 30%;outline: red solid thin"> _____________________________________</div>
+         <div style="float:left;width: 69%;outline: green solid thin">&nbsp;&nbsp; &nbsp;_____________________________________</div>
+         <div style="float:left;width: 30%;outline: red solid thin"> &nbsp;_____________________________________</div>
       </div>
       <div style="clear:both"></div>
       <br>
       <div>
          <div style="float:left;width: 68%;outline: green solid thin" >
-         &nbsp;&nbsp; ALFONSO CAMPUZANO RAMÍREZ
+         &nbsp;&nbsp;    &nbsp;&nbsp; ALFONSO CAMPUZANO RAMÍREZ
             <div>
-               DIRECTOR GENERAL DE INNOVACIÓN
+            &nbsp;&nbsp; DIRECTOR GENERAL DE INNOVACIÓN
             </div>
          </div>
-         <div  style="font-zize=2; " tyle="float:left;width: 30%;outline: red solid thin">
-            C.P. MARTHA BEATRIZ ARISTA VÁZQUEZ 
+         <div   style="font-size: 8pt" tyle="float:left;width: 2%;outline: red solid thin">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C.P. MARTHA BEATRIZ ARISTA 
+         <div>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VÁZQUEZ 
+         </div>
             <div>  
             &nbsp;    &nbsp;&nbsp;&nbsp;COORDINADORA ADMINISTRATIVA 
             </div>
@@ -298,36 +406,38 @@ $html = '
       <div style="clear:both"></div>
       <br><br><br>
       <div>
-         <div style="float:left;width: 69%;outline: green solid thin">_____________________________________</div>
+         <div style="float:left;width: 69%;outline: green solid thin">&nbsp;&nbsp;&nbsp;&nbsp;_____________________________________</div>
          <div style="float:left;width: 30%;outline: red solid thin">_____________________________________</div>
       </div>
       <div style="clear:both"></div>
       <br>
       <div>
-         <div style="float:left;width: 68%;outline: green solid thin">
-         &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FERNANDO MATA RIVERA
+         <div style="float:left;width: 68%;outline: green solid thin">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FERNANDO MATA RIVERA
+         
             <div>
-            &nbsp; DELEGADO ADMINISTRATIVO DE LA
+            &nbsp; &nbsp;&nbsp; DELEGADO ADMINISTRATIVO DE LA
             </div>
-            DIRECCIÓN GENERAL DE INNOVACIÓN
+            &nbsp;&nbsp;   DIRECCIÓN GENERAL DE INNOVACIÓN
          </div>
-         <div style="float:left;width: 4%;outline: red solid thin" style="font-size: 8pt">MTRO. RODOLFO ALEJANDRO LÓPEZ 
-         &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  VIDEZ
+         <div style="float:left;width: 3%;outline: red solid thin" style="font-size: 8pt">MTRO. RODOLFO ALEJANDRO LÓPEZ 
+       &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;VIDEZ
            <div>
            &nbsp;  &nbsp; DIRECTOR GENERAL DE PERSONAL
            </div>
          </div>
+         
       </div>
       <div style="clear:both">
          <br><br><br>
-         <div class="pie-pagina" align="right">
-            <h6 align="right">
-               20301/NP-101/16
-            </h6>
-         </div>
-      </div>
-      </div>
 
+      </div>
+      
+      </div>
+      <div style="float: left">
+      <h6 align="right">
+         20301/NP-101/16
+      </h6>
+   </div>  
         
 
 
