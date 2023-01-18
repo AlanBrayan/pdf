@@ -5,7 +5,7 @@
 
 
     $mpdf = new \Mpdf\Mpdf([
-        'default_font_size' => 7.7,
+        'default_font_size' => 8.1,
         'default_font' => 'dejavusans'
     ]);
 
