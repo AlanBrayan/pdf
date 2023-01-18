@@ -163,10 +163,23 @@ $html = '
          transform: scale(14.5);
          }
 
+         .sub_div {
+            position: absolute;
+            bottom: 115px;
+            left:650px;
+        }
+        p {
+            margin-left:780px;
+        }
+
       </style>
    </head>
    <body>
    
+   <div class="sub_div">
+   <p>20301/NP-101/16 </p>
+</div>
+
       <div clas="container">
       <br><br>
       <div class="table-responsive" >
@@ -397,13 +410,10 @@ $html = '
          </div>
          <div style="clear:both">
             <br><br><br>
-         </div>      
-         <div style="float: left" style="height:60px;">
-         <h6 align="right">
-            20301/NP-101/16
-         </h6>
+        
       </div>
-      </div>
+
+      
    </body>
 </html>
 ';
