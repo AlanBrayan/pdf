@@ -1,4 +1,9 @@
 <?php
+$uno    = (in_array(1, $array)?'checked="checked"':'');
+$dos    = (in_array(2, $array)?'checked="checked"':'');
+$tres   = (in_array(3, $array)?'checked="checked"':'');
+$cuatro = (in_array(4, $array)?'checked="checked"':'');
+
 $mpdf->SetHTMLHeader('<img src="lista/1.jpg" style="float: left; margin: 0px 0px 40px 1px;" width="240  " height="50"/>');
 $html = '
 <!DOCTYPE html>
@@ -306,7 +311,7 @@ $html = '
          </div>
          <div style="font-family: dejavusans;" style="font-size: 7.9pt" class="leftdiv2" id="light-table-paragraph"><input type="checkbox" style="-webkit-transform: scale(2);" style="height:30px;" id="coding" name="interest" value="coding" />&nbsp; Baja por renuncia
             <br>
-            <input type="checkbox" id="coding" name="interest" value="coding" />&nbsp; Baja por jubilación
+            <input type="checkbox"  checked="checked" id="coding" name="interest" value="coding" />&nbsp; Baja por jubilación
             <br>
             <input type="checkbox" id="coding" name="interest" value="coding" />&nbsp; Indemnización por riesgo de trabajo
             <br>
