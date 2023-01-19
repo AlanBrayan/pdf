@@ -6,7 +6,7 @@ $html = '
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Mi pdf</title>
+      <title>PDF</title>
       <style>
       <style>
          table, td,th {
@@ -105,6 +105,24 @@ $html = '
          margin-top: 1px;
          margin-bottom: 0px;
          }
+         #light-table2 {
+         width: 98%;  
+         height:
+         padding-top: 12px;
+         padding-bottom: 10px;
+         text-align: left;
+         margin-top: -15px;
+         margin-bottom: 12px;
+         }
+         #light-table3 {
+         width: 98%;  
+         height:
+         padding-top: 12px;
+         padding-bottom: 30px;
+         text-align: left;
+         margin-top: 0px;
+         margin-bottom: 20px;
+         }
          .leftdiv1 {
          float: left;
          position: relative;
@@ -118,10 +136,10 @@ $html = '
          width:33%; 
          }
          pie-pagina{
-         height: 150px;
+         height: 130px;
          left: 50px;
          position: relative;
-         top: -50px;
+         top: -40px;
          width: 150px;
          }
          .leftdiv3 {
@@ -162,8 +180,8 @@ $html = '
          }
          .sub_div {
          position: absolute;
-         bottom:50px;
-         left:630px;
+         bottom:83px;
+         left:600px;
          }
          p {
          margin-left:780px;
@@ -187,6 +205,49 @@ $html = '
          content: " ";
          display: table;
          }
+         #block_container {
+         text-align: center;
+         }
+         #block_container > div {
+         display: inline-block;
+         vertical-align: middle;
+         }
+         #bloc1, #bloc2
+         {
+         display:inline;
+         border: 1px solid rgb(253, 237, 5);
+         }
+         #block1{
+         padding: 12px;
+         }
+         .leftdiv21 {
+         float: left;
+         position: relative;
+         width:35%; 
+         padding-top: 0px;
+         padding-bottom: 1px;
+         } 
+         .leftdiv22 {
+         float: right;
+         position: relative;
+         width:35%; 
+         padding-top: 0px;
+         padding-bottom: 1px;
+         } 
+         .leftdiv23 {
+         float: left;
+         position: relative;
+         width:35%; 
+         padding-top: 0px;
+         padding-bottom: 1px;
+         } 
+         .leftdiv24 {
+         float: right;
+         position: relative;
+         width:35%; 
+         padding-top: 0px;
+         padding-bottom: 1px;
+         } 
       </style>
    </head>
    <body>
@@ -281,7 +342,7 @@ $html = '
          <tr>
             <th>1222</th>
             <td style="text-align:center;" >SUELDOS Y SALARIOS</td>
-            <td>1,000.00</td>
+            <td style="text-align:center;">1,000.00</td>
             <th>5408</th>
             <td>I.S.R.Maria Anders</td>
             <td style="text-align:right;">574.38</td>
@@ -337,7 +398,7 @@ $html = '
          <tr>
             <td></td>
             <th style="text-align: right; " >SUBTOTAL</th>
-            <td style="text-align: right; ">1,000.00</td>
+            <td style="text-align: center; ">1,000.00</td>
             <td></td>
             <th style="text-align: right; " >SUBTOTAL</th>
             <td style="text-align:right;">1,294.85</td>
@@ -348,7 +409,7 @@ $html = '
          </tr>
       </table>
       <div>
-         <em>RECIBI</em> de la Caja General de Gobierno del Estado de México la cantidad de $ 5,942.00
+         <em>RECIBÍ</em> de la Caja General de Gobierno del Estado de México la cantidad de $ 5,942.00
       </div>
       <div>
          <em>(CINCO MIL NOVECIENTOS CUARENTA Y DOS PESOS 00/100 M.N.)</em>
@@ -370,58 +431,40 @@ $html = '
       </div>
       <br>
       <div>
-         <div style="float:left;width: 69%;outline: green solid thin">&nbsp;&nbsp; &nbsp;_____________________________________</div>
-         <div style="float:left;width: 30%;outline: red solid thin"> &nbsp;_____________________________________</div>
+         <div  
+            style="float:left;width: 64%;underline: green solid thin">&nbsp;&nbsp; &nbsp;_____________________________________</div>
+         <div style="float:right;width: 20%;underline: red solid thin" style="left: 100px;" >___________________________________________</div>
       </div>
       <div style="clear:both"></div>
       <br>
-      <div>
-         <div style="float:left;width: 68%;outline: green solid thin" >
-            &nbsp;&nbsp;    &nbsp;&nbsp; <em>ALFONSO CAMPUZANO RAMÍREZ<em>
-            <div>
-               &nbsp;&nbsp;<em>DIRECTOR GENERAL DE INNOVACIÓN</em>
+      <div id="light-table2">
+         <div id="leftdivcontainer" class="clearfix">
+            <div style="font-family: dejavusans;" style="font-size: 7.4pt" class="leftdiv21"><em>ALFONSO CAMPUZANO RAMÍREZ
+               DIRECTOR GENERAL DE INNOVACIÓN</em>
             </div>
-         </div>
-         <div   style="font-size: 7.4pt" tyle="float:left;width: 2%;outline: red solid thin">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>C.P. MARTHA BEATRIZ ARISTA</em> 
-            <div>
-               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em>VÁZQUEZ</em>
-            </div>
-            <div>  
-               &nbsp;    &nbsp;&nbsp;&nbsp;<em>COORDINADORA ADMINISTRATIVA</em> 
-            </div>
-            <div>
-               &nbsp;     &nbsp;&nbsp;&nbsp;<em>DE LA SECRETARÍA DE FINANZAS</em>
+            <div style="font-family: dejavusans;" style="font-size: 7.4pt" class="leftdiv22" ><em>C.P. MARTHA BEATRIZ ARISTA VÁZQUEZ 
+               COORDINADORA ADMINISTRATIVA 
+               DE LA SECRETARÍA DE FINANZAS</em>
             </div>
          </div>
       </div>
-      <div style="clear:both"></div>
       <br><br><br>
-      <div>
-         <div style="float:left;width: 69%;outline: green solid thin">&nbsp;&nbsp;&nbsp;&nbsp;_____________________________________</div>
-         <div style="float:left;width: 30%;outline: red solid thin">_____________________________________</div>
+         <div  
+            style="float:left;width: 64%;underline: green solid thin">&nbsp;&nbsp; &nbsp;_____________________________________</div>
+         <div style="float:right;width: 20%;underline: red solid thin" style="left: 100px;" >___________________________________________</div>
       </div>
-      <div style="clear:both"></div>
-      <br>
-      <div>
-         <div style="float:left;width: 68%;outline: green solid thin">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>FERNANDO MATA RIVERA<em>
-            <div>
-               &nbsp; &nbsp;&nbsp; <em>DELEGADO ADMINISTRATIVO DE LA</em>
+      <div id="light-table3">
+         <div id="leftdivcontainer" class="clearfix">
+            <div style="font-family: dejavusans;" style="font-size: 7.4pt" class="leftdiv21"><em>FERNANDO MATA RIVERA
+               DELEGADO ADMINISTRATIVO DE LA
+               DIRECCIÓN GENERAL DE INNOVACIÓN
+               </em>
             </div>
-            &nbsp;&nbsp; <em>DIRECCIÓN GENERAL DE INNOVACIÓN</em>
-         </div>
-         <div style="float:left;width: 3%;outline: red solid thin" style="font-size: 7.4pt">
-            <em>MTRO. RODOLFO ALEJANDRO LÓPEZ </em>
-            &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;    &nbsp;  &nbsp;  &nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;<em   >VIDEZ<em>
-            <div>
-               &nbsp;  &nbsp; <em>DIRECTOR GENERAL DE PERSONAL</em>
+            <div style="font-family: dejavusans;" style="font-size: 7.4pt" class="leftdiv22" ><em>MTRO. RODOLFO ALEJANDRO LÓPEZ VIDEZ
+               DIRECTOR GENERAL DE PERSONAL
+               </em>
             </div>
          </div>
-      </div>
-      <div style="clear:both">
-         <br><br><br>
       </div>
    </body>
 </html>
