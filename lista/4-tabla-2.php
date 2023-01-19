@@ -1,8 +1,4 @@
 <?php
-$uno    = (in_array(1, $array)?'checked="checked"':'');
-$dos    = (in_array(2, $array)?'checked="checked"':'');
-$tres   = (in_array(3, $array)?'checked="checked"':'');
-$cuatro = (in_array(4, $array)?'checked="checked"':'');
 
 $mpdf->SetHTMLHeader('<img src="lista/1.jpg" style="float: left; margin: 0px 0px 40px 1px;" width="240  " height="50"/>');
 $html = '
